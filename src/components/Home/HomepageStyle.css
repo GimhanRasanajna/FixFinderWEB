@@ -1,0 +1,581 @@
+@import url('https://fonts.gooleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Signika+Negative:wght@700&display=swap');
+
+
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+   /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    
+    
+    
+}
+
+body{
+    background: #ffffff;
+    min-height: 200vh;
+}
+
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+    
+}
+header.sticky{
+    padding: 5px 100px;
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color:#000 ;    
+
+}
+
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    font-size: 2em;
+    /* text-transform: uppercase; */
+    /* letter-spacing: 2px; */
+    transition: 0.6s;
+    font-family:'Signika Negative', sans-serif;
+    margin-left:-755px;
+
+    
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+header.sticky ul li a{
+    
+    color: black;
+}
+
+.banner{
+    position:relative;
+    width: 100%;
+    height: 100vh;
+    /* background: url("../images/city.jpg"); */
+    /* background-image: url("../../images/city.jpg"); */
+    /* background-clip: ; */
+    background-size: cover;
+
+}
+.myVideo{
+   
+    width: 100%;
+    height: 100vh;
+    
+}
+
+video{
+    width:100%;
+    height: 100vh;
+    object-fit: cover; 
+    
+
+}
+.banner:hover .details {
+    display: none;
+
+  }
+  
+.video.play-time {
+    display: none;
+  }
+  
+.horizontal-line {
+    display: none;
+  }
+header.sticky .logo,
+header.sticky ul li a {
+    color:#000 ;
+}
+
+/* ****************logo***************** */
+.hidden {
+    opacity: 0;
+  }
+  
+  .console-container {
+    font-family: Khula;
+    font-size: 8em;
+    text-align: center;
+    height: 200px;
+    width: 900px;
+    display: block;
+    position: absolute;
+    color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  
+  .console-underscore {
+    display: inline-block;
+    position: relative;
+    top: -0.14em;
+    left: 10px;
+  }
+ 
+/* ******************* */
+
+.img_one{
+    width: 189.42px;
+    height:507.68px;
+    position: absolute;
+    left:1000px;  
+    top:790px;
+
+}
+.img_two{
+    width: 189.42px;
+    height:507.68px;
+    position: absolute;
+    left:1150px;
+    top:890px;  
+}
+.bcImg{
+    width:580px;
+    height:605px;
+    position: absolute;
+    left:885px;
+    /* top:850px;  */
+    top: 810px;
+    z-index: -100; 
+    
+
+}
+/* ****************    QR  CODE ****************** */
+.qrTxtBox{
+ /* position: absolute;   */
+  width:550px;
+  height:300px;
+  
+  margin-top:120px;
+  margin-left: 100px;
+  
+ 
+}
+.appTxt1{
+ font-size: 24px; 
+ width: 286px;
+height: 97px;
+font-size: 80px;
+line-height: 97px;
+font-weight: 600;
+color:#000;
+}
+.appTxt2{
+font-size: 24px; 
+width: 520px;
+height: 97px;
+font-weight: 600;
+font-size: 80px;
+line-height: 97px;
+margin-top:-15px;
+color:#000;
+   }
+
+   .appTxt3{
+    font-size: 24px; 
+    width: 188px;
+height: 97px;
+font-weight: 600;
+font-size: 80px;
+line-height: 97px;
+margin-top:-22px;
+color:#000;
+   }
+   .appTxt4{
+    width: 503px;
+height: 34px;
+left: 65px;
+font-weight: 400;
+font-size:25px;
+line-height: 34px;
+/* margin-top:-97px; */
+color: rgba(30, 30, 30, 0.42);
+
+   }
+ /* ************Qr code with btn ************   */
+.QRimgdiv{
+    position:relative;
+    width: 100%;
+    height:100vh;
+    background: url("../../images/QR.png");
+    background-size: cover;
+}
+.dnBtn {
+    /* position: absolute; */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7942D5
+    ; /* Set your desired background color */
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.5s;
+    margin-left: 100px;
+    margin-top:30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    
+    
+  } 
+  
+  .dnBtn:hover {
+    background-color:#22133B; /* Set your desired hover background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+/* **********BackBtn************* */
+.back-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .back-icon {
+    color: #000; /* Set the desired color for the icon */
+    font-size: 18px; /* Adjust the font size as needed */
+  }
+
+  .back-button:hover {
+    background-color: #e0e0e0; /* Set the desired hover background color */
+    border-radius: 50%; /* Makes the button circular */
+  }
+  
+/* *********************************** */
+  
+/* ************************ */
+.animate-avatar {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .animate-avatar:hover {
+    transform: scale(1.2);
+  }
+.boxOne{
+    position: absolute;
+    width: 496px;
+    height: 756px;
+    left:260px;
+    top: 1538px;
+    margin-left: 0;
+    background-image: url("../../images/box1.png");
+    background-size: cover;
+    border-radius: 30px;
+    }
+    #boxTopic1{
+       
+        width: 261px;
+        height: 40px;
+        font-weight: 600;
+        font-size: 33px;
+        line-height: 40px;
+        color: #FFFFFF;
+        margin-top:655px;
+        margin-left:36px;
+        
+    }
+    #boxTence1{
+      
+        width: 398px;
+        height: 24px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        margin-left: 36px;
+        color: #6D3FB8;
+        margin-top:8px;
+    }
+    
+    .boxTwo{
+        position: absolute;
+    width: 478px;
+    height: 368px;
+    left: 776px;
+    top: 1538px;
+    margin-top: 0;
+    
+    /*background: url(.jpg), #1E1E1E;*/
+    background-image: url("../../images/box2.png");
+    border-radius: 30px;
+    background-size: cover;
+    }
+    #boxTopic2{
+       
+        width: 335px;
+        height: 40px;
+        font-weight: 600;
+        font-size: 33px;
+        line-height: 40px;
+        color: #FFFFFF;
+        margin-top:22px;
+        margin-left:36px;
+        
+    }
+    #boxTence2{
+      
+        width: 398px;
+        height: 24px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        margin-left: 36px;
+        color: #6D3FB8;
+        margin-top: 8px;
+        
+        
+    }
+    .boxThree{
+      position: absolute;
+    width: 478px;
+    height: 362px;
+    left: 776px;
+    top: 1932px;
+    
+    
+    /*background: url(.jpg), #1E1E1E;*/
+    background-image: url("../../images/box3.png");
+    border-radius: 30px;
+    background-size: cover;
+    }
+    #boxTopic3{
+       
+        width: 335px;
+        height: 40px;
+        font-weight: 600;
+        font-size: 33px;
+        line-height: 40px;
+        color: #FFFFFF;
+        margin-top:22px;
+        margin-left:36px;
+        
+    }
+    #boxTence3{
+      
+        width: 398px;
+        height: 24px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        margin-left: 36px;
+        color: #FFFFFF;
+        margin-top: 8px;
+        
+        
+    }
+    
+    .boxFour{
+      position: absolute;
+    width: 428px;
+    height: 403px;
+    left:260px;
+    top: 2314px;
+    
+    /*background: url(.jpg), #1E1E1E;*/
+    background-image: url("../../images/box4.png");
+    border-radius: 30px;
+    background-size: cover;
+    
+    }
+    #boxTopic4{
+       
+        width: 335px;
+        height: 40px;
+        font-weight: 600;
+        font-size: 33px;
+        line-height: 40px;
+        color: #FFFFFF;
+        margin-top:265px;
+        margin-left:36px;
+        
+    }
+    #boxTence4{
+      
+        width: 398px;
+        height: 24px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        margin-left: 36px;
+        color: #FFFFFF;
+        margin-top: 8px;
+        
+        
+    }
+    .boxFive{
+    position: absolute;
+    width: 548px;
+    height: 403px;
+    left:708px;
+    top: 2314px;
+    
+    /*background: url(.jpg), #1E1E1E;*/
+    background-image: url('../../images/box5.png');
+    border-radius: 30px;
+    background-size: cover;
+    }
+    #boxTopic5{
+       
+        width: 335px;
+        height: 40px;
+        font-weight: 600;
+        font-size: 33px;
+        line-height: 40px;
+        color: #FFFFFF;
+        margin-top:5px;
+        margin-left:36px;
+        
+    }
+    #boxTence5{
+      
+        width: 398px;
+        height: 24px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        margin-left: 36px;
+       
+        margin-top: 8px;
+        
+        
+    }
+ /* ****************************** */
+
+ /* ****************************** */
+
+    /* ------------------- */
+     .topicDiv{
+        width: 100%;
+        height:1650px;
+        background-color: #ffffff;
+        margin-top:370px;
+        /* margin-bottom:100px; */
+        /* position:'absolute';
+        top: 4600px; */
+        
+
+     }
+    .btmbox1{
+        position: absolute;
+        width: 320px;
+        height: 405px;
+        left:260px;
+        /* top: 3000px; */
+        top: 2950px;
+        
+        background: #000;
+        border-radius: 30px;
+         
+    }
+
+    .btmbox2{
+        position: absolute;
+        width: 320px;
+        height: 405px;
+        left: 599px;
+        top:2950px;
+
+        background: #000;
+        border-radius: 30px;
+    }
+
+    .btmbox3{
+        position: absolute;
+        width: 320px;
+        height: 405px;
+        left: 938px;
+        top:2950px;
+
+        background: #000;
+        border-radius: 30px;
+    }
+
+    /* ----------------------- */
+
+    .mainTopic{
+        /* position: absolute; */
+        width: 274px;
+        height: 80px;
+        margin-top:45px;
+        margin-left:30px;
+        font-weight: 600;
+        font-size: 33px;
+        line-height: 40px;
+        
+        color: #FFFFFF;
+         
+    }
+
+    .Topicdata{
+        
+        width: 288px;
+        height: 108px;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 27px;
+        margin-left:30px;
+        margin-top:45px;
+        
+        color: #FFFFFF; 
+    }
+    .footer{
+        width: '100%';
+        height: 450px;
+        background-image: url('../../images/bottom.png');
+        background-size: cover;
+        background-position: center;
+        /* margin-top: 800px; */
+    }
+
+    .link{
+        /* position: absolute; */
+        width: 180px;
+        height: 24px;
+        margin-left:30px;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 27px;
+        margin-top:52px;
+        
+        color: #7D41DF; 
+    }

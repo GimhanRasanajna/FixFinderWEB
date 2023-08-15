@@ -1,0 +1,10 @@
+.sign-container{
+    width: 100%;
+    display: flex;
+   justify-content: space-around;
+}
+
+.login-container{
+    width: 600px;
+    padding: 60px;
+}
